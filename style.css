@@ -1,0 +1,283 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.top-bar {
+  background: linear-gradient(90deg, #fdd835, #ffca28);
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.contact-left span {
+  margin-right: 20px;
+  font-weight: 600;
+   font-weight: bold;
+}
+
+.social-right a {
+  margin-left: 12px;
+  color: #333;
+  font-size: 17px;
+  transition: color 0.3s;
+}
+
+.social-right a:hover {
+  color: #1a237e;
+}
+
+
+.navbar {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  box-shadow: 0 2px 6px rgba(200, 230, 3, 0.1);
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #090000;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #000000;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+  width: 100%;
+}
+
+.nav-links li a:hover {
+  color: #ae0f0ff0;
+}
+
+
+.about-section {
+  background: linear-gradient(to right, #1a237e, #3949ab);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.breadcrumb {
+  font-size: 1rem;
+  color: #c5cae9;
+}
+
+
+.about-content {
+  max-width: 1400px;
+  margin: 0px auto;
+  padding: 30px 20px;
+  
+}
+
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  
+  
+ 
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(38, 175, 33, 0.2);
+  transition: transform 0.4s;
+  
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+ 
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #1a237e;
+  
+}
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  
+}
+
+
+.vision-mission {
+  background: #f8f9fa;
+  padding: 60px 20px;
+}
+
+.vm-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.vm-box {
+  flex: 1 1 40%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.vm-box:hover {
+  transform: translateY(-10px);
+}
+
+.vm-box img {
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.vm-box h3 {
+  color: #1a237e;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+.info-section {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.info-box {
+  flex: 1;
+  min-width: 280px;
+  background: #fdfdfd;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.info-box h3 {
+  color: #1a237e;
+  margin-bottom: 15px;
+}
+
+.info-box ul {
+  padding-left: 20px;
+  list-style: square;
+}
+
+
+.footer {
+  background: #1a237e;
+  color: #fff;
+  padding: 25px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-left .footer-logo {
+  height: 70px;
+}
+
+.footer-center {
+  font-size: 14px;
+  text-align: center;
+  flex: 1;
+}
+
+.footer-right {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #1a237e;
+  transition: 0.3s;
+}
+
+.footer-right a:hover {
+  background: #ffc107;
+  color: #fff;
+}
+
+.scroll-top {
+  background-color: #ffc107 !important;
+  color: #fff !important;
+}
